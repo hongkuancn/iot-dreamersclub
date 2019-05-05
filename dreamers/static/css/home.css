@@ -1,0 +1,13 @@
+body {
+    height: 100%;
+    margin: 0;
+}
+
+#ind {
+    background-image: url("https://images.unsplash.com/photo-1544096714-18ad573ad07e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}

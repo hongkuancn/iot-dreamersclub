@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Hind+Madurai" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-3" >
+            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical" style="background-color: '#F3F4F8'">
+                <div>
+                <img src="data:image/png;base64,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" class="img-fluid " style="margin-top:40px;display: block;margin-left: auto;margin-right: auto;" alt="">
+                <h3 class="text-center" style="margin: 20px">Jackson</h3>
+                </div>
+                <a class="nav-link text-center" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab"
+                    aria-controls="v-pills-home" aria-selected="false">Home</a>
+                <a class="nav-link text-center" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Your Information</a>
+
+                <a class="nav-link active text-center" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab"
+                    aria-controls="v-pills-profile" aria-selected="true">Regional Information</a>
+            </div>
+        </div>
+        <div class="col-9">
+            <div class="tab-content" id="v-pills-tabContent">
+                <div class="tab-pane" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                    <div
+                        style="background-image: url('https://www.worldtravelguide.net/wp-content/uploads/2017/04/Think-Finland-Lapland-185122878-sara_winter-copy.jpg');background-position: center;background-repeat: no-repeat; width: 100%; height: 100%;background-size: cover;">
+                        <h1 class="text-center" style="height: 100%; padding: 50px;">Welcome to Espoo Municipality!</h1>
+                    </div>
+                </div>
+                <div class="tab-pane" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab"><table class="table table-striped" style="margin: 30px 0;">
+                    <tbody>
+                        <tr>
+                            <th scope="row">Age</th>
+                            <td>{{data.age}}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Height</th>
+                            <td>{{data.height}} cm</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Weight</th>
+                            <td>{{data.weight}} kg</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Blood Pressure</th>
+                            <td>{{data.blood_pressure}}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Respiratory Rate</th>
+                            <td>{{data.respiratory_rate}} times/min</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">BMI</th>
+                            <td>{{data.bmi}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h1 class="text-center" style="margin-top: 30px; padding: 30px; background-color: #EDC92F; color:aliceblue; font-family: Hind Madurai">
+                    You respiratory rate is higher than average. <br>
+                    Take it easy, my friend!
+                </h1></div>
+                <div class="tab-pane show active" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                    <div class='tableauPlaceholder' id='viz1556992610582' style='position: relative'><noscript><a href='#'><img alt=' '
+                                    src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ma&#47;Map_15569924385430&#47;Sheet1&#47;1_rss.png'
+                                    style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+                            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                            <param name='embed_code_version' value='3' />
+                            <param name='site_root' value='' />
+                            <param name='name' value='Map_15569924385430&#47;Sheet1' />
+                            <param name='tabs' value='no' />
+                            <param name='toolbar' value='yes' />
+                            <param name='static_image'
+                                value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ma&#47;Map_15569924385430&#47;Sheet1&#47;1.png' />
+                            <param name='animate_transition' value='yes' />
+                            <param name='display_static_image' value='yes' />
+                            <param name='display_spinner' value='yes' />
+                            <param name='display_overlay' value='yes' />
+                            <param name='display_count' value='yes' /></object></div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script
+    type='text/javascript'>                    var divElement = document.getElementById('viz1556992610582'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+
+</body>
+
+</html>
+
